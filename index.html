@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKY</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eaa7e5192.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/MARKY.svg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front-End Web Developer</p>
+                <h1>Hi, I'm <span>Mark</span><br>Akere from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="img/my-portrait.svg"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Marky, a passionate Web Developer with a love for technicalities. I thrive on solving complex problems, creating innovative designs, and helping others achieve their goals. When I'm not coding, you can find me playing football. I believe in Honesty and Integrity, and I'm always eager to collaborate, learn, and grow. Let's connect and create something amazing together!</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Designing nice visuals</li>
+                            <li><span>Video Editing</span><br>Modifying video files to create a finished video</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-present</span><br>BSc Petroleum and Gas Engineering at University of Lagos</li>
+                            <li><span>2020-2023</span><br>Senior secondary school at EHJMC Ilorin</li>
+                            <li><span>2017-2020</span><br>Junior secondary school at St. Gregory's College, Ikoyi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- ----------services--------- --> 
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <span>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design combines creativity and functionality to create user-friendly, visually appealing websites. It’s about crafting seamless experiences that look great and work flawlessly, helping brands connect with their audience effectively.</p>
+                    <a href="https://drive.google.com/drive/folders/131d8pLW_QSsDqkE5AF824zZIWtlfLvDt?usp=drive_link">Learn more</a>
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Video Editing</h2>
+                    <p>Video editing is the process of shaping raw footage into compelling stories. It’s about perfecting timing, blending visuals and sound, and adding effects to create seamless, engaging content. Every cut and transition helps bring ideas to life, ensuring the final piece resonates with its audience.</p>
+                    <a href="https://www.tiktok.com/@markolaniyi?is_from_webapp=1&sender_device=pc">Learn more</a>
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic design is visual storytelling, blending creativity and strategy to create impactful designs. Through imagery, typography, and layout, I craft visuals that communicate ideas clearly and leave a lasting impression.</p>
+                    <a href="https://drive.google.com/drive/folders/1xInwg1JKIe6jJAGdc-WmQl60NWMlkzCA?usp=drive_link">Learn more</a>
+                </span>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>olaniyimark06@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09112372424</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/people/MARKY-Studios/100094812188819/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/marky.olaniyi?igsh=dDZ2YjFpb3d2YmMy"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://x.com/Marky8780276662"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href="https://wa.link/p6blra"><i class="fa-brands fa-whatsapp"></i></i></a>
+                        <a href="https://ng.linkedin.com/in/mark-akere-792981306"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+              
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <P>Copyright &copy Marky. Made with <i class="fa-solid fa-heart"></i> in Lagos</P>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+           
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfw2tuj5O5q5jZ-e-9iqb_Rzj2--RbhEPIL9wMA5kPt1nfwhLmAyQxEYSDite4lAp7WQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
