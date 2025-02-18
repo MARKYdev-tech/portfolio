@@ -416,3 +416,20 @@ nav .fa-solid {
         opacity: 1;
     }
 }
+
+.slide-down {
+    animation: slidedown 0.3s linear forwards;
+    
+}
+
+@keyframes slidedown {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    } 
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
