@@ -34,7 +34,7 @@ const observerr = new IntersectionObserver(entries => {
 
 
 serv.forEach(serv => {
-    observer.observe(serv)
+    observerr.observe(serv)
 })
   
 
