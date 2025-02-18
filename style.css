@@ -110,6 +110,7 @@ nav ul li a:hover {
 
 .about-col-1 {
     flex-basis: 35%;
+    opacity: 0;
 }
 
 .about-col-1 img {
