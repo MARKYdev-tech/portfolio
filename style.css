@@ -401,12 +401,12 @@ nav .fa-solid {
 /* Apply Overflow: HIDDEN; to the div */
 
 .slide-up {
-    animation: slideup 0.5s linear forwards;
+    animation: slideup 0.3s linear forwards;
 }
 
 @keyframes slideup {
     0% {
-        transform: translateY(-100px);
+        transform: translateY(-60px);
         opacity: 0;
     } 
 
