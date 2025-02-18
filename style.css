@@ -26,7 +26,7 @@ body {
 }
 
 .slide-left {
-    animation: slideleft 1s linear forwards;
+    animation: slideleft 0.5s linear forwards;
 }
 
 @keyframes slideleft {
@@ -42,7 +42,7 @@ body {
 }
 
 .header-text p.slide-left {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .header-text p {
