@@ -19,3 +19,23 @@ cards.forEach(cards => {
 
 
   
+const serv = document.querySelectorAll(".serv-span")
+
+
+const observerr = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("slide-down", entry.isIntersecting)
+        if (entry.isIntersecting) observerr.unobserve(entry.target)
+    })
+},
+{
+    threshold: 0.3,
+})
+
+
+serv.forEach(serv => {
+    observer.observe(serv)
+})
+  
+
+  
